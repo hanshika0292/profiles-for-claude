@@ -1,0 +1,21 @@
+# Build output (build.sh, make-dmg.sh)
+build/
+*.dmg
+
+# macOS
+.DS_Store
+
+# Xcode / SwiftPM, if you open the sources in an IDE
+xcuserdata/
+DerivedData/
+.build/
+.swiftpm/
+
+# Local environment and app state
+.env
+.env.*
+profiles.json
+
+# Local AI-assistant notes and session data
+.claude/
+CLAUDE.local.md

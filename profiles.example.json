@@ -1,0 +1,38 @@
+{
+  "profiles" : [
+    {
+      "accountLabel" : "",
+      "codeArgs" : "",
+      "codeConfigDir" : "",
+      "color" : "orange",
+      "defaultFolder" : "",
+      "desktopDataDir" : "",
+      "emoji" : "⭐️",
+      "extraEnv" : "",
+      "id" : "default",
+      "name" : "Default",
+      "recentFolders" : [
+
+      ],
+      "slug" : "default"
+    },
+    {
+      "accountLabel" : "you@example.com",
+      "codeArgs" : "--model opus",
+      "codeConfigDir" : "~/.claude-profiles/work",
+      "color" : "blue",
+      "defaultFolder" : "~/code",
+      "desktopDataDir" : "~/Library/Application Support/Claude Manager/Desktop/work",
+      "emoji" : "💼",
+      "extraEnv" : "ANTHROPIC_MODEL=opus\n# ANTHROPIC_API_KEY=your-key-here",
+      "id" : "8E1C2B4A-0000-4000-8000-000000000001",
+      "lastCodeLaunch" : "2026-01-15T09:30:00Z",
+      "name" : "Work",
+      "recentFolders" : [
+
+      ],
+      "slug" : "work"
+    }
+  ],
+  "version" : 1
+}
