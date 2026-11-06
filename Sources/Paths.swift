@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Hanshika Gupta
+
 import Foundation
 
 /// Well-known locations used by Claude Code, Claude Desktop and this app.

@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Hanshika Gupta. See LICENSE.
 # Builds build/Claude Manager.app with the Xcode command-line tools (no Xcode project needed).
 # Universal (Intel + Apple Silicon) by default; ARCHS=x86_64 ./build.sh for a quicker local build.
 # Pass --install to copy it into ~/Applications.
@@ -24,6 +26,7 @@ lipo -create build/ClaudeManager-* -output "$BIN"
 rm -f build/ClaudeManager-*
 
 cp Info.plist "$APP/Contents/"
+cp LICENSE THIRD_PARTY_NOTICES.md "$APP/Contents/Resources/"   # MIT: the notice travels with the app
 "$BIN" --render-app-icon build/AppIcon.iconset
 iconutil -c icns build/AppIcon.iconset -o "$APP/Contents/Resources/AppIcon.icns"
 rm -rf build/AppIcon.iconset

@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Hanshika Gupta. See LICENSE.
 # Builds the app and packages it as a drag-to-Applications DMG for sharing.
 # Any arguments (e.g. --install) are passed through to build.sh.
 set -euo pipefail

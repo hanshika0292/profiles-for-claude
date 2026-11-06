@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Hanshika Gupta
+
 import AppKit
 
 /// Draws the app icon and per-profile Dock launcher icons. No image assets needed.
