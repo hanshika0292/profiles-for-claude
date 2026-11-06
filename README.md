@@ -1,5 +1,6 @@
 # Profiles for Claude: run multiple Claude Code and Claude Desktop accounts on one Mac
 
+[![CI](https://github.com/hanshika0292/profiles-for-claude/actions/workflows/ci.yml/badge.svg)](https://github.com/hanshika0292/profiles-for-claude/actions/workflows/ci.yml)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![macOS 13+](https://img.shields.io/badge/macOS-13%2B-lightgrey.svg)
 ![Apple Silicon and Intel](https://img.shields.io/badge/Apple%20Silicon%20%2B%20Intel-universal-informational.svg)

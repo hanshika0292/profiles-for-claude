@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build (universal)
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Toolchain
+        run: swiftc --version
+
+      - name: Build Claude Manager.app (arm64 + x86_64)
+        run: ./build.sh
+
+      - name: Check the bundle
+        run: |
+          APP="build/Claude Manager.app"
+          lipo -archs "$APP/Contents/MacOS/ClaudeManager" | grep -q arm64
+          lipo -archs "$APP/Contents/MacOS/ClaudeManager" | grep -q x86_64
+          test -f "$APP/Contents/Resources/AppIcon.icns"
+          test -f "$APP/Contents/Resources/LICENSE"
+          test -f "$APP/Contents/Resources/THIRD_PARTY_NOTICES.md"
+          plutil -lint Info.plist
+          codesign --verify --verbose "$APP"
