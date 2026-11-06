@@ -26,5 +26,7 @@
 	<string>Claude Manager opens Claude Code sessions in iTerm2 when you choose it as your terminal.</string>
 	<key>NSHighResolutionCapable</key>
 	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (c) 2026 Hanshika Gupta. MIT License. Unofficial; not affiliated with Anthropic.</string>
 </dict>
 </plist>

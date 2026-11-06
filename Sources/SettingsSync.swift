@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Hanshika Gupta
+
 import Foundation
 
 /// Copies or symlinks configuration between profiles without touching login state.
